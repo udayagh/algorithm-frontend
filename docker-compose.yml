@@ -13,5 +13,6 @@ services:
         limits:
           memory: 500M
     ports:
-      - 8888:80
+      - 80:80
+      - 443:443
 
