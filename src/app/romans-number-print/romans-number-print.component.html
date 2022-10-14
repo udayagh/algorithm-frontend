@@ -1,0 +1,35 @@
+<h2><b>Exercise 2 – Romans</b></h2>
+
+<span style="color: brown">
+  Create a function that will return the roman numerals for a given non-negative, non-zero
+integer. For reference, roman numerals are a string notation for decimals where different
+letters represent different integer values as follows:
+I = 1
+V = 5
+X = 10
+L = 50
+C = 100
+D = 500
+M = 1000
+Letters are combined either in prefix or postfix to generate the numbers in between, up to a
+maximum of 3 consecutive letters. For instance, VIII = 8, but IX = 9, because VIIII is invalid as it
+contains 4 consecutive I’s.
+A number containing several decimal digits is built by appending the Roman numeral equivalent
+for each, from highest to lowest, as in the following examples:
+39 = XXX + IX = XXXIX.
+246 = CC + XL + VI = CCXLVI.
+789 = DCC + LXXX + IX = DCCLXXXIX.
+2,421 = MM + CD + XX + I = MMCDXXI.
+Please provide a suitable test case with test data to demonstrate that your function works.
+</span>
+<br>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label for="name">Input your own value: </label>
+    <input type="text" id="name" name="name" formControlName="name" minlength="1" required>
+  </p>
+  <p>
+    <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+  </p>
+</form>

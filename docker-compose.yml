@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  ui:
+    image: interview-example-image
+    container_name: interview-example-ui
+    hostname: ui
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 500M
+    ports:
+      - 8888:80
+

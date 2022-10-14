@@ -1,0 +1,26 @@
+<h2><b>Exercise 3 – Fibonacci</b></h2>
+
+<span style="color: brown">
+  Given the list of possible coins:
+
+[1p, 2p, 5p, 10p, 20p, 50p, 100p]
+
+Create a function, with suitable test cases, which returns the minimum number of coins to
+reach a given total. For instance, if 39p change is required this would be made up of 6 coins:
+
+1x 20p
+1x 10p
+1x 5p
+2x 2p
+</span>
+<br>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label for="name">Input your own value: </label>
+    <input type="text" id="name" name="name" formControlName="name" minlength="1" required>
+  </p>
+  <p>
+    <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+  </p>
+</form>

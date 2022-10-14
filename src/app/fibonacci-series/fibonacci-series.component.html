@@ -1,0 +1,35 @@
+<h2><b>Exercise 4 – Coin Change</b></h2>
+
+<span style="color: brown">
+  The Fibonacci series of numbers is used throughout computing, as in nature, and is described
+simply as:
+
+Fn = Fn−1 + Fn−2
+
+This gives rise to a sequence which begins:
+F0 = 0
+F1 = 1
+F2 = 1
+F3 = 2
+F4 = 3
+F5 = 5
+
+Assessment Exercises/1.4/11.05.2022
+
+Etc.
+
+Create a function which, given an integer n, will return the sum of numbers up to but not
+including n. For values of n < 1 simply return 0. For example where n = 5:-
+Result = F0 + F1 + F2 + F3 + F4
+</span>
+<br>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label for="name">Input your own value: </label>
+    <input type="text" id="name" name="name" formControlName="name" minlength="1" required>
+  </p>
+  <p>
+    <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+  </p>
+</form>
